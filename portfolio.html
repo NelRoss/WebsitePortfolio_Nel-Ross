@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nel Ross Mendioro | Portfolio</title>
+
+
+    <!-- Portfolio CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+
+            <!-- LOGO -->
+
+            <a href="index.html" class="logo">
+
+                <span>Nel Ross</span> Mendioro
+
+            </a>
+
+
+
+            <!-- NAVIGATION LINKS -->
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+
+                    <i class="fa-solid fa-house"></i>
+
+                    Home
+
+                </a>
+
+
+                <a href="portfolio.html" class="nav-link">
+
+                    <i class="fa-solid fa-gamepad"></i>
+
+                    Portfolio
+
+                </a>
+
+
+                <a href="aboutme.html" class="nav-link">
+
+                    <i class="fa-solid fa-user"></i>
+
+                    About Me
+
+                </a>
+
+
+                <a href="contact.html" class="nav-link">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <span>Contact Me</span>
+
+                </a>
+
+            </nav>
+
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         MAIN
+    ========================================================= -->
+
+    <main>
+
+
+        <!-- =====================================================
+             HERO
+        ===================================================== -->
+
+        <section class="portfolio-hero">
+
+
+            <div class="hero-content">
+
+
+                <p class="eyebrow">
+
+                    <i class="fa-solid fa-briefcase"></i>
+
+                    My Work
+
+                </p>
+
+
+                <h1>
+
+                    PROJECTS
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    A collection of games built with passion using
+                    the Unity Engine — from 3D games
+                    and Educational mobile game and Designs.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PROJECT SECTION
+        ===================================================== -->
+
+        <section class="projects-section">
+
+
+            <!-- =====================================================
+     FILTER BUTTONS
+===================================================== -->
+
+<div class="filter-buttons">
+
+    <button
+        class="filter-btn active"
+        data-filter="all"
+        type="button"
+    >
+        <i class="fa-solid fa-layer-group"></i>
+        All Projects
+    </button>
+
+    <button
+        class="filter-btn"
+        data-filter="pc"
+        type="button"
+    >
+        <i class="fa-solid fa-desktop"></i>
+        PC Games
+    </button>
+
+    <button
+        class="filter-btn"
+        data-filter="mobile"
+        type="button"
+    >
+        <i class="fa-solid fa-mobile-screen"></i>
+        Mobile Games
+    </button>
+
+    <button
+        class="filter-btn"
+        data-filter="design"
+        type="button"
+    >
+        <i class="fa-solid fa-palette"></i>
+        Designs
+    </button>
+
+</div>
+
+
+
+            <!-- =================================================
+                 PC GAMES
+            ================================================= -->
+
+            <div class="category-title">
+
+
+                <span class="category-line"></span>
+
+
+                <h2>
+
+                    PC Games
+
+                </h2>
+
+
+                <span class="category-line"></span>
+
+
+            </div>
+
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================================
+                     SANTELMO
+                ================================================= -->
+
+                <article
+                    class="project-card"
+                    data-platform="pc"
+                >
+
+
+                    <div class="project-image">
+
+
+                        <img
+                            src="Games Images/Santelmo Gameplay/image.png"
+                            alt="Santelmo"
+                        >
+
+
+                        <span class="platform-badge">
+
+                            PC
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="project-content">
+
+
+                        <div class="project-tags">
+
+                            <span>3D Adventure</span>
+
+                            <span>Philippine Mythology</span>
+
+                        </div>
+
+
+                        <h3>
+
+                            SANTELMO
+
+                        </h3>
+
+
+                        <p>
+
+                            A 3D survival horror side-scroller set in
+                            a haunted Bicol village. You play as a young
+                            boy using the light of his phone as both a
+                            weapon and guide through the dark streets,
+                            facing creatures drawn from Philippine mythology.
+
+                        </p>
+
+
+                        <div class="tech-stack">
+
+                            <span>Unity</span>
+
+                            <span>C#</span>
+
+                            <span>3D</span>
+
+                            <span>
+                                Bicol University, Legazpi City, Game Jam 2025
+                            </span>
+
+                            <span class="award-badge">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                            Game Jam 2025
+
+                        </span>
+
+                        </div>
+
+
+                        <div class="role">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            UI/UX Designer, Sound Designer and Implementation
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+
+                            <button
+                                class="screenshot-btn"
+                                onclick="openGallery('santelmo')"
+                            >
+
+                                <i class="fa-solid fa-image"></i>
+
+                                Gameplay
+
+                            </button>
+
+
+                            <a
+                                href="https://noclick-studios.itch.io/santelmo-v2"
+                                class="download-btn"
+                                target="_blank"
+                            >
+
+                                <i class="fa-solid fa-download"></i>
+
+                                Download Game
+
+                            </a>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- =================================================
+                     ESCAPE NOW
+                ================================================= -->
+
+                <article
+                    class="project-card"
+                    data-platform="pc"
+                >
+
+
+                    <div class="project-image">
+
+
+                        <img
+                            src="Games Images/Escape Now Gameplay/image_1.png"
+                            alt="Escape Now"
+                        >
+
+
+                        <span class="platform-badge">
+
+                            PC
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="project-content">
+
+
+                        <div class="project-tags">
+
+                            <span>3D</span>
+
+                            <span>Escape Game</span>
+
+                            <span>Casual</span>
+
+                        </div>
+
+
+                        <h3>
+
+                            Escape Now
+
+                        </h3>
+
+
+                        <p>
+
+                            A fast-paced maze game where you must outrun
+                            a pursuing police warden to escape!
+
+                        </p>
+
+
+                        <div class="tech-stack">
+
+                            <span>Unity</span>
+
+                            <span>C#</span>
+
+                            <span>3D</span>
+
+                        </div>
+
+
+                        <div class="role">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            Game Developer
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+
+                            <button
+                                class="screenshot-btn"
+                                onclick="openGallery('escape')"
+                            >
+
+                                <i class="fa-solid fa-image"></i>
+
+                                Gameplay
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MOBILE GAMES
+            ================================================= -->
+
+            <div class="category-title mobile-category">
+
+
+                <span class="category-line"></span>
+
+
+                <h2>
+
+                    Mobile Games
+
+                </h2>
+
+
+                <span class="category-line"></span>
+
+
+            </div>
+
+
+
+            <div class="projects-grid">
+
+
+                <!-- =================================================
+                     ANURA DEFENDER
+                ================================================= -->
+
+                <article
+                    class="project-card"
+                    data-platform="mobile"
+                >
+
+
+                    <div class="project-image">
+
+
+                        <img
+                            src="Games Images/Anura Defender Gameplay/anura defender game poster.png"
+                            alt="Anura Defender"
+                        >
+
+
+                        <span class="platform-badge">
+
+                            Mobile
+
+                        </span>
+
+
+                        <span class="award-badge">
+
+                            <i class="fa-solid fa-trophy"></i>
+
+                            Top 12
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="project-content">
+
+
+                        <div class="project-tags">
+
+                            <span>3D</span>
+
+                            <span>Educational</span>
+
+                            <span>Casual</span>
+
+                        </div>
+
+
+                        <h3>
+
+                            Anura Defender
+
+                        </h3>
+
+
+                        <p>
+
+                            An educational 3D mobile game where players
+                            protect the Philippines' endemic frog species
+                            from invading insects in an engaging action
+                            strategy format.
+
+                        </p>
+
+
+                        <div class="tech-stack">
+
+                            <span>Unity</span>
+
+                            <span>C#</span>
+
+                            <span>Educational</span>
+
+                            <span>Globe Go Gaming 2025</span>
+
+                        </div>
+
+
+                        <div class="role">
+
+                            <i class="fa-solid fa-code"></i>
+
+                            Sound Designer, UI/UX Designer, Programmer
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+
+                            <button
+                                class="screenshot-btn"
+                                onclick="openGallery('anura')"
+                            >
+
+                                <i class="fa-solid fa-image"></i>
+
+                                Gameplay
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+
+                <!-- =================================================
+                     TWISTALE
+                ================================================= -->
+
+                <article
+                    class="project-card"
+                    data-platform="mobile"
+                >
+
+
+                    <div class="project-image">
+
+
+                        <img
+                            src="Games Images/TWISTALE GAMEPLAY/TwistalePoster.png"
+                            alt="Twistale"
+                        >
+
+
+                        <span class="platform-badge">
+
+                            Mobile
+
+                        </span>
+
+
+                    </div>
+
+
+
+                    <div class="project-content">
+
+
+                        <div class="project-tags">
+
+                            <span>2D</span>
+
+                            <span>Educational</span>
+
+                            <span>Novel</span>
+
+                        </div>
+
+
+                        <h3>
+
+                            TWISTALE
+
+                        </h3>
+
+
+                        <p>
+
+                            A 2D quiz-style visual novel with three
+                            science mini-games, offering young learners
+                            interactive, curriculum-aligned education.
+
+                        </p>
+
+
+                        <div class="tech-stack">
+
+                            <span>Unity</span>
+
+                            <span>C#</span>
+
+                            <span>Educational</span>
+
+                            <span>Freelance Game 2025</span>
+
+                        </div>
+
+
+                        <div class="role">
+
+                            <i class="fa-solid fa-volume-high"></i>
+
+                            Sound Designer
+
+                        </div>
+
+
+                        <div class="project-actions">
+
+
+                            <button
+                                class="screenshot-btn"
+                                onclick="openGallery('twistale')"
+                            >
+
+                                <i class="fa-solid fa-image"></i>
+
+                                Gameplay
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+<!-- =====================================================
+     DESIGNS
+===================================================== -->
+
+<div class="category-title design-category">
+    <span class="category-line"></span>
+    <h2>Designs</h2>
+    <span class="category-line"></span>
+</div>
+
+<div class="projects-grid design-grid">
+
+    <!-- DESIGN SAMPLE 1 -->
+    <article class="project-card" data-platform="design">
+        <div class="project-image">
+            <img src="Projects/Design 1.png" alt="Design Sample 1" loading="lazy">
+            <span class="platform-badge">Design</span>
+        </div>
+        <div class="design-actions">
+            <button class="design-view-btn" type="button" data-image="Projects/Design 1.png" data-title="Design Sample 1">
+                <i class="fa-solid fa-eye"></i> View
+            </button>
+        </div>
+    </article>
+
+    <!-- DESIGN SAMPLE 2 -->
+    <article class="project-card" data-platform="design">
+        <div class="project-image">
+            <img src="Projects/Design 2.png" alt="Design Sample 2" loading="lazy">
+            <span class="platform-badge">Design</span>
+        </div>
+        <div class="design-actions">
+            <button class="design-view-btn" type="button" data-image="Projects/Design 2.png" data-title="Design Sample 2">
+                <i class="fa-solid fa-eye"></i> View
+            </button>
+        </div>
+    </article>
+
+    <!-- DESIGN SAMPLE 3 -->
+    <article class="project-card" data-platform="design">
+        <div class="project-image">
+            <img src="Projects/Design 3.jpg" alt="Design Sample 3" loading="lazy">
+            <span class="platform-badge">Design</span>
+        </div>
+        <div class="design-actions">
+            <button class="design-view-btn" type="button" data-image="Projects/Design 3.jpg" data-title="Design Sample 3">
+                <i class="fa-solid fa-eye"></i> View
+            </button>
+        </div>
+    </article>
+
+    <!-- DESIGN SAMPLE 4 -->
+    <article class="project-card" data-platform="design">
+        <div class="project-image">
+            <img src="Projects/Design 4.jpg" alt="Design Sample 4" loading="lazy">
+            <span class="platform-badge">Design</span>
+        </div>
+        <div class="design-actions">
+            <button class="design-view-btn" type="button" data-image="Projects/Design 4.jpg" data-title="Design Sample 4">
+                <i class="fa-solid fa-eye"></i> View
+            </button>
+        </div>
+    </article>
+
+    <!-- DESIGN SAMPLE 5 -->
+    <article class="project-card" data-platform="design">
+        <div class="project-image">
+            <img src="Projects/Design 5.jpg" alt="Design Sample 5" loading="lazy">
+            <span class="platform-badge">Design</span>
+        </div>
+        <div class="design-actions">
+            <button class="design-view-btn" type="button" data-image="Projects/Design 5.jpg" data-title="Design Sample 5">
+                <i class="fa-solid fa-eye"></i> View
+            </button>
+        </div>
+    </article>
+
+    <!-- DESIGN SAMPLE 6 -->
+    <article class="project-card" data-platform="design">
+        <div class="project-image">
+            <img src="Projects/Design 6.jpg" alt="Design Sample 6" loading="lazy">
+            <span class="platform-badge">Design</span>
+        </div>
+        <div class="design-actions">
+            <button class="design-view-btn" type="button" data-image="Projects/Design 6.jpg" data-title="Design Sample 6">
+                <i class="fa-solid fa-eye"></i> View
+            </button>
+        </div>
+    </article>
+
+    <!-- DESIGN SAMPLE 7 -->
+    <article class="project-card" data-platform="design">
+        <div class="project-image">
+            <img src="Projects/Design 7.png" alt="Design Sample 7" loading="lazy">
+            <span class="platform-badge">Design</span>
+        </div>
+        <div class="design-actions">
+            <button class="design-view-btn" type="button" data-image="Projects/Design 7.png" data-title="Design Sample 7">
+                <i class="fa-solid fa-eye"></i> View
+            </button>
+        </div>
+    </article>
+
+</div>
+
+
+
+    <!-- =========================================================
+         IMAGE GALLERY MODAL
+    ========================================================= -->
+
+    <div
+        class="image-modal"
+        id="imageModal"
+    >
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            class="close-modal"
+            onclick="closeImage()"
+            aria-label="Close gallery"
+        >
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+
+
+        <!-- PREVIOUS BUTTON -->
+
+        <button
+            class="gallery-arrow gallery-prev"
+            onclick="previousImage()"
+            aria-label="Previous image"
+        >
+
+            <i class="fa-solid fa-chevron-left"></i>
+
+        </button>
+
+
+
+        <!-- IMAGE -->
+
+        <div class="gallery-content">
+
+
+            <img
+                id="modalImage"
+                src=""
+                alt="Project Screenshot"
+            >
+
+
+        </div>
+
+
+
+        <!-- NEXT BUTTON -->
+
+        <button
+            class="gallery-arrow gallery-next"
+            onclick="nextImage()"
+            aria-label="Next image"
+        >
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+        </button>
+
+
+
+        <!-- BOTTOM INFORMATION -->
+
+        <div class="gallery-info">
+
+
+            <h3 id="galleryTitle">
+
+                Project Screenshots
+
+            </h3>
+
+
+            <span id="galleryCounter">
+
+                1 / 1
+
+            </span>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================= -->
+
+    <footer>
+
+
+        <p>
+
+            © <span id="year"></span>
+
+            Nel Ross Mendioro.
+
+            All Rights Reserved.
+
+        </p>
+
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="javascript.js"></script>
+
+
+</body>
+
+</html>

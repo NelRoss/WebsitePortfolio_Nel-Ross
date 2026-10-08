@@ -1,0 +1,854 @@
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: "Inter", sans-serif;
+
+    background: #0b0d12;
+
+    color: #f5f5f5;
+
+    line-height: 1.6;
+
+    min-height: 100vh;
+
+    /* PAGE FADE IN */
+    animation: pageFadeIn 0.6s ease-in-out;
+
+}
+
+
+a {
+    text-decoration: none;
+
+    color: inherit;
+}
+
+
+
+/* =========================================================
+   PAGE FADE IN ANIMATION
+========================================================= */
+
+@keyframes pageFadeIn {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    background:
+        rgba(11, 13, 18, 0.92);
+
+    backdrop-filter:
+        blur(14px);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
+
+}
+
+
+.nav-container {
+
+    width:
+        min(1200px, 92%);
+
+    height: 75px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+
+    font-size: 1.4rem;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+
+}
+
+
+.logo span {
+
+    color: #7c5cff;
+
+}
+
+
+
+/* =========================================================
+   NAVIGATION LINKS
+========================================================= */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+.nav-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #a9adb8;
+
+    font-size: 0.92rem;
+
+    font-weight: 500;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+.nav-link i {
+
+    font-size: 0.9rem;
+
+}
+
+
+.nav-link:hover {
+
+    color: #ffffff;
+
+    transform:
+        translateY(-1px);
+
+}
+
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+.nav-link.active {
+
+    color: #8b70ff;
+
+}
+
+
+.nav-link.active i {
+
+    color: #8066ff;
+
+}
+
+
+
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
+
+.contact-section {
+
+    width: 100%;
+
+    padding:
+        75px 0 90px;
+
+    min-height:
+        calc(100vh - 150px);
+
+    display: flex;
+
+    align-items: flex-start;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(112, 86, 255, 0.045),
+            transparent 45%
+        );
+
+}
+
+
+.contact-container {
+
+    width:
+        min(1050px, 92%);
+
+    margin:
+        0 auto;
+
+}
+
+
+
+/* =========================================================
+   CONTACT HEADING
+========================================================= */
+
+.contact-heading {
+
+    margin-bottom:
+        35px;
+
+}
+
+
+.section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    margin-bottom:
+        10px;
+
+}
+
+
+.section-icon {
+
+    width:
+        47px;
+
+    height:
+        47px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius:
+        11px;
+
+    background:
+        rgba(124, 92, 255, 0.12);
+
+    color:
+        #8b70ff;
+
+    font-size:
+        1.1rem;
+
+}
+
+
+.section-title h1 {
+
+    font-size:
+        1.55rem;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        -0.5px;
+
+}
+
+
+.contact-heading p {
+
+    color:
+        #8e94a3;
+
+    font-size:
+        0.9rem;
+
+    max-width:
+        700px;
+
+}
+
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.contact-form {
+
+    width:
+        100%;
+
+}
+
+
+
+/* =========================================================
+   NAME + EMAIL
+========================================================= */
+
+.contact-row {
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap:
+        30px;
+
+    margin-bottom:
+        32px;
+
+}
+
+
+
+/* =========================================================
+   FORM GROUP
+========================================================= */
+
+.form-group {
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    gap:
+        10px;
+
+}
+
+
+.form-group label {
+
+    color:
+        #b9bdc8;
+
+    font-size:
+        0.82rem;
+
+    font-weight:
+        600;
+
+}
+
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.form-group input,
+.form-group textarea {
+
+    width:
+        100%;
+
+    border:
+        1px solid #292e39;
+
+    border-radius:
+        11px;
+
+    background:
+        #11141b;
+
+    color:
+        #f5f5f5;
+
+    font-family:
+        "Inter", sans-serif;
+
+    font-size:
+        0.88rem;
+
+    outline:
+        none;
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.form-group input {
+
+    height:
+        75px;
+
+    padding:
+        0 22px;
+
+}
+
+
+.form-group textarea {
+
+    height:
+        310px;
+
+    padding:
+        20px 22px;
+
+    resize:
+        vertical;
+
+}
+
+
+
+/* =========================================================
+   PLACEHOLDER
+========================================================= */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+    color:
+        #697183;
+
+}
+
+
+
+/* =========================================================
+   INPUT HOVER
+========================================================= */
+
+.form-group input:hover,
+.form-group textarea:hover {
+
+    border-color:
+        #3a4050;
+
+}
+
+
+
+/* =========================================================
+   INPUT FOCUS
+========================================================= */
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+    border-color:
+        #8066ff;
+
+    background:
+        #131620;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(128, 102, 255, 0.10);
+
+}
+
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+.message-group {
+
+    margin-bottom:
+        40px;
+
+}
+
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.contact-submit {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    gap:
+        12px;
+
+    min-width:
+        215px;
+
+    height:
+        60px;
+
+    margin:
+        0 auto;
+
+    padding:
+        0 28px;
+
+    border:
+        none;
+
+    border-radius:
+        32px;
+
+    background:
+        #8066ff;
+
+    color:
+        #ffffff;
+
+    font-family:
+        "Inter", sans-serif;
+
+    font-size:
+        0.9rem;
+
+    font-weight:
+        700;
+
+    cursor:
+        pointer;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.contact-submit i {
+
+    font-size:
+        0.85rem;
+
+    transition:
+        transform 0.25s ease;
+
+}
+
+
+.contact-submit:hover {
+
+    background:
+        #7056ff;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 28px
+        rgba(112, 86, 255, 0.22);
+
+}
+
+
+.contact-submit:hover i {
+
+    transform:
+        translateX(5px);
+
+}
+
+
+.contact-submit:active {
+
+    transform:
+        translateY(0);
+
+}
+
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    padding:
+        28px 20px;
+
+    text-align:
+        center;
+
+    border-top:
+        1px solid #20242d;
+
+    color:
+        #686d78;
+
+    font-size:
+        0.78rem;
+
+}
+
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 800px) {
+
+
+    .nav-container {
+
+        height:
+            auto;
+
+        padding:
+            18px 0;
+
+        flex-direction:
+            column;
+
+        gap:
+            18px;
+
+    }
+
+
+    .nav-links {
+
+        gap:
+            20px;
+
+    }
+
+
+    .contact-section {
+
+        padding-top:
+            55px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+    .nav-links {
+
+        gap:
+            14px;
+
+        flex-wrap:
+            wrap;
+
+        justify-content:
+            center;
+
+    }
+
+
+    .nav-link {
+
+        font-size:
+            0.76rem;
+
+    }
+
+
+    .nav-link i {
+
+        font-size:
+            0.75rem;
+
+    }
+
+
+    .contact-section {
+
+        padding:
+            45px 0 60px;
+
+    }
+
+
+    .contact-row {
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            22px;
+
+        margin-bottom:
+            22px;
+
+    }
+
+
+    .section-title h1 {
+
+        font-size:
+            1.35rem;
+
+    }
+
+
+    .section-icon {
+
+        width:
+            42px;
+
+        height:
+            42px;
+
+    }
+
+
+    .form-group input {
+
+        height:
+            65px;
+
+    }
+
+
+    .form-group textarea {
+
+        height:
+            240px;
+
+    }
+
+
+    .contact-submit {
+
+        width:
+            100%;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+
+    .logo {
+
+        font-size:
+            1.2rem;
+
+    }
+
+
+    .nav-links {
+
+        gap:
+            10px;
+
+    }
+
+
+    .nav-link {
+
+        font-size:
+            0.7rem;
+
+    }
+
+
+    .contact-heading p {
+
+        font-size:
+            0.82rem;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    html {
+        scroll-behavior: auto;
+    }
+
+    body {
+        animation: none;
+    }
+
+}
